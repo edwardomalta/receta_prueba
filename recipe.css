@@ -19,9 +19,9 @@ div.descripcion {
 /* Que bonito que es me recuerda a C */
 div.contenido {
     background-color: white;
-    margin: 60px 10% 100px 10%;
-    padding: 0px 30px 30px 30px;
-    min-width: 320px;
+    margin: 40px 8px 80px 8px;
+    padding: 0px 8px 20px 8px;
+    /* min-width: 320px; */
     /* overflow: auto; */
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
     overflow: visible;
@@ -65,7 +65,7 @@ table.infogra {
     position: absolute;   
     bottom: 0;
     width: 100%;
-    height: 90px;
+    height: 50px;
     color: white;
     background-color: #6C829DC0;
 }
@@ -86,7 +86,7 @@ img.info {
     background-color: lightblue;
 }
 div.col {
-    width: 45%;
+    width: 100%;
     margin-top: 7px;
 }
 .col h2 {
@@ -97,11 +97,11 @@ div.col {
     padding-bottom: 6px;
 }
 div.col1 {
-    display: inline-block;
-    margin-right: 10%;
+    width: 100%;
+    /* display: inline-block; */
 }
 div.col2{
-    float: right;
+    /* float: right; */
 }
 
 div.izquierda p {
@@ -138,4 +138,43 @@ table.instrucciones td {
 
 table.instrucciones tr {
     height: 40px;
+}
+
+   /* For desktop: */
+@media only screen and (min-width: 768px) {
+    div.contenido {
+        margin: 60px 10% 100px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 320px; 
+    }
+    table.infogra {   
+        height: 90px;
+    }
+    table.infogra td {
+        font-size: 14px;
+    }
+    table.infogra th {
+        font-size: 16px;
+    }
+    div.col {
+        width: 45%;
+        margin-top: 7px;
+    }
+   
+    div.col1 {
+        display: inline-block;
+        margin-right: 10%;
+    }
+    div.col2{
+        float: right;
+    }
+       
+}
+
+   /* For very big: */
+   @media only screen and (min-width: 900px) {
+    div.contenido {
+        margin-left: auto;
+        margin-right: auto;
+        width: 640px;
 }
